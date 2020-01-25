@@ -57,6 +57,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CustomToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +72,8 @@
     <Compile Include="BaseComponent\MyCheckBox.cs" />
     <Compile Include="BaseComponent\MyComboBox.cs" />
     <Compile Include="BaseComponent\MyDatePicker.cs" />
+    <Compile Include="BaseComponent\MyGrid.cs" />
+    <Compile Include="BaseComponent\MyViewBox.cs" />
     <Compile Include="BaseComponent\MyLabel.cs" />
     <Compile Include="BaseComponent\MyList.cs" />
     <Compile Include="BaseComponent\MyListBox.cs" />
@@ -75,14 +81,25 @@
     <Compile Include="BaseComponent\MyRadioButton.cs" />
     <Compile Include="BaseComponent\MyRegex.cs" />
     <Compile Include="BaseComponent\MyTextBox.cs" />
+    <Compile Include="BaseComponent\MyWindow.cs" />
+    <Compile Include="CustomToggleButton.xaml.cs">
+      <DependentUpon>CustomToggleButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ProgressBarControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseComponent\MyButton.cs" />
     <Compile Include="BaseComponent\MyUserControl.cs" />
+    <Compile Include="ProgressBarControl.xaml.cs">
+      <DependentUpon>ProgressBarControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -108,8 +125,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomComponent\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

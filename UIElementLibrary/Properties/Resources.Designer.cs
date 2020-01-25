@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UIElementLibrary.BaseComponent.Properties
+namespace UIElement.BaseComponent.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace UIElementLibrary.BaseComponent.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UIElementLibrary.BaseComponent.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UIElement.BaseComponent.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

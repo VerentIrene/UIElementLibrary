@@ -1,0 +1,15 @@
+﻿<local:MyUserControl x:Class="UIElement.CustomToggleButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UIElementLibrary.BaseComponent"
+                     mc:Ignorable="d" Height="60" Width="102">
+    <local:MyViewBox Margin="0,2,2,1">
+        <local:MyGrid HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Center" Width="102">
+            <Rectangle x:Name="back_rectangle" Fill="#FFBDBDBD" HorizontalAlignment="Center" Height="56" VerticalAlignment="Center" Width="96" RadiusY="29" RadiusX="29" MouseLeftButtonDown="OnMouseLeftButtonDownBack_rectangle"/>
+            <Ellipse x:Name="dot_ellipse" Fill="White" HorizontalAlignment="Center" Height="52" Width="52" VerticalAlignment="Center" MouseLeftButtonDown="OnMouseLeftButtonDownDot_ellipse" />
+        </local:MyGrid>
+    </local:MyViewBox>
+
+</local:MyUserControl>

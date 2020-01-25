@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UIElementLibrary.BaseComponent.Properties
+namespace UIElement.BaseComponent.Properties
 {
 
 
