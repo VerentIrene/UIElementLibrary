@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace UIElementLibrary
+namespace UIElementLibrary.BaseContainer
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for BaseMessageBox.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BaseMessageBox : Window
     {
-        public MainWindow()
+        public BaseMessageBox()
         {
             InitializeComponent();
         }

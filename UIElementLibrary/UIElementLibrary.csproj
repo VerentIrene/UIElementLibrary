@@ -73,6 +73,8 @@
     <Compile Include="BaseComponent\MyComboBox.cs" />
     <Compile Include="BaseComponent\MyDatePicker.cs" />
     <Compile Include="BaseComponent\MyGrid.cs" />
+    <Compile Include="BaseComponent\MyStackPanel.cs" />
+    <Compile Include="BaseComponent\MyTextBlock.cs" />
     <Compile Include="BaseComponent\MyViewBox.cs" />
     <Compile Include="BaseComponent\MyLabel.cs" />
     <Compile Include="BaseComponent\MyList.cs" />

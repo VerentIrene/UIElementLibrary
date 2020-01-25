@@ -5,17 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using UIElementLibrary.BaseComponent;
 
-namespace NavigationalComponents
+namespace UIElementLibrary.Factory
 {
     class FactoryListBoxItem
     {
         public static int heightBox = 30;
         public FactoryListBoxItem() { }
 
-        public ListBoxItem AddListBoxItem(String _textListItem)
+        public MyListBoxItem AddListBoxItem(String _textListItem)
         {
-            ListBoxItem listBoxItem = new ListBoxItem();
+            MyListBoxItem listBoxItem = new MyListBoxItem();
             listBoxItem.Foreground = Brushes.Black;
             listBoxItem.Content = _textListItem.ToString();
             listBoxItem.Height = heightBox;

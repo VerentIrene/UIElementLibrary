@@ -13,12 +13,13 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UIElementLibrary.BaseComponent;
 
 namespace UIElementLibrary{
     /// <summary>
     /// Interaction logic for ProgressBarControl.xaml
     /// </summary>
-    public partial class ProgressBarControl : Window {
+    public partial class ProgressBarControl : MyWindow {
         public ProgressBarControl(){
             InitializeComponent();
 
