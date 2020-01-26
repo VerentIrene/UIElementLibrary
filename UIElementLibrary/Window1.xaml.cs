@@ -11,13 +11,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using UIElementLibrary.BaseComponent;
 
 namespace UIElementLibrary
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window1 : MyMessageBox
     {
         public Window1()
         {

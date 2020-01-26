@@ -57,6 +57,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BaseContainer\BaseMessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="CustomToggleButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,7 +79,10 @@
     <Compile Include="BaseComponent\MyCheckBox.cs" />
     <Compile Include="BaseComponent\MyComboBox.cs" />
     <Compile Include="BaseComponent\MyDatePicker.cs" />
+    <Compile Include="BaseComponent\MyDockPanel.cs" />
     <Compile Include="BaseComponent\MyGrid.cs" />
+    <Compile Include="BaseComponent\MyListBoxItem.cs" />
+    <Compile Include="BaseComponent\MyMessageBox.cs" />
     <Compile Include="BaseComponent\MyStackPanel.cs" />
     <Compile Include="BaseComponent\MyTextBlock.cs" />
     <Compile Include="BaseComponent\MyViewBox.cs" />
@@ -84,14 +94,22 @@
     <Compile Include="BaseComponent\MyRegex.cs" />
     <Compile Include="BaseComponent\MyTextBox.cs" />
     <Compile Include="BaseComponent\MyWindow.cs" />
+    <Compile Include="BaseContainer\BaseMessageBox.xaml.cs">
+      <DependentUpon>BaseMessageBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomToggleButton.xaml.cs">
       <DependentUpon>CustomToggleButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Factory\FactoryListBoxItem.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ProgressBarControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
