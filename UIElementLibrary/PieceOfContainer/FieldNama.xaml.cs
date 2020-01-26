@@ -10,19 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UIElementLibrary.BaseComponent;
 
-namespace UIElementLibrary.BaseContainer
+namespace UIElementLibrary.PieceOfContainer
 {
     /// <summary>
-    /// Interaction logic for BaseMessageBox.xaml
+    /// Interaction logic for FieldNama.xaml
     /// </summary>
-    public partial class BaseMessageBox : MyWindow
+    public partial class FieldNama : UserControl
     {
-        public BaseMessageBox()
+        public FieldNama()
         {
             InitializeComponent();
         }
+
+        public void ValidasiHuruf(object sender, TextCompositionEventArgs e)
+        {
+            MyRegex regex = new MyRegex("[^a-zA-Z]");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
     }
 }

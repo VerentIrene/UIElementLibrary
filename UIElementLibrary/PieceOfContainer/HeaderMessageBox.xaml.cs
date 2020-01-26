@@ -10,17 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UIElementLibrary.BaseComponent;
 
-namespace UIElementLibrary.BaseContainer
+namespace UIElementLibrary.PieceOfContainer
 {
     /// <summary>
-    /// Interaction logic for BaseMessageBox.xaml
+    /// Interaction logic for HeaderMessageBox.xaml
     /// </summary>
-    public partial class BaseMessageBox : MyWindow
+    public partial class HeaderMessageBox : MyUserControl
     {
-        public BaseMessageBox()
+        public HeaderMessageBox()
         {
             InitializeComponent();
         }

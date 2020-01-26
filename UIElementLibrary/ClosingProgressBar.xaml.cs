@@ -26,7 +26,7 @@ namespace UIElementLibrary{
             closing_pb.IsIndeterminate = false;
             Duration duration = new Duration(TimeSpan.FromSeconds(20));
             DoubleAnimation doubleanimation = new DoubleAnimation(200, duration);
-            closing_pb.BeginAnimation(ProgressBar.ValueProperty, doubleanimation);
+            closing_pb.BeginAnimation(MyProgressBar.ValueProperty, doubleanimation);
         }
 
         private void OnValueChangedClosing_pb(object sender, RoutedPropertyChangedEventArgs<double> e){

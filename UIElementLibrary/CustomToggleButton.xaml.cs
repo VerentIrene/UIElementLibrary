@@ -25,7 +25,6 @@ namespace UIElement
         Thickness rightSide = new Thickness(0, 0, -39, 0);
         SolidColorBrush colorOff = new SolidColorBrush(Color.FromRgb(160,160,160));
         SolidColorBrush colorOn = new SolidColorBrush(Color.FromRgb(130,190,125));
-        private bool toggled = false;
 
         public CustomToggleButton()
         {
@@ -35,16 +34,7 @@ namespace UIElement
             dot_ellipse.Margin = leftSide;
         }
 
-        public void setToggled(bool _toggled)
-        {
-            this.toggled = _toggled;
-        }
-
-        public bool getToggled()
-        {
-            return this.toggled;
-        }
-
+#region EventHandler
         private void OnMouseLeftButtonDownDot_ellipse(object sender, MouseButtonEventArgs e)
         {
             if (!toggled)
@@ -76,5 +66,20 @@ namespace UIElement
                 dot_ellipse.Margin = leftSide;
             }
         }
+#endregion
+
+#region setter-getter
+
+        private bool toggled = false;
+        public void setToggled(bool _toggled)
+        {
+            this.toggled = _toggled;
+        }
+        public bool getToggled()
+        {
+            return this.toggled;
+        }
+
+#endregion
     }
 }

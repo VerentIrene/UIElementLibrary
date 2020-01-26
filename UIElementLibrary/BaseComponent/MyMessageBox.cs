@@ -8,7 +8,7 @@ using System.Windows.Media;
 
 namespace UIElementLibrary.BaseComponent
 {
-    public class MyMessageBox : MyWindow
+    public class MyMessageBox : Window
     {
         public MyMessageBox()
         {
