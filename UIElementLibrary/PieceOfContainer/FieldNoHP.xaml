@@ -1,0 +1,12 @@
+﻿<local:MyUserControl x:Class="UIElementLibrary.PieceOfContainer.FieldNoHP"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UIElementLibrary.BaseComponent"
+             mc:Ignorable="d" Height="44" Width="338">
+    <local:MyGrid>
+        <local:MyTextBox x:Name="noHp_txt" HorizontalAlignment="Left" Height="23" Margin="131,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" PreviewTextInput="ValidasiAngka"/>
+        <local:MyLabel x:Name="noHp_lbl" Content="Nomor HP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
+    </local:MyGrid>
+</local:MyUserControl>

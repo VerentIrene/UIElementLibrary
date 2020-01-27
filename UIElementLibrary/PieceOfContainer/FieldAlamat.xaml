@@ -1,0 +1,12 @@
+﻿<local:MyUserControl x:Class="UIElementLibrary.PieceOfContainer.FieldAlamat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UIElementLibrary.BaseComponent"
+             mc:Ignorable="d" Height="81" Width="325">
+    <local:MyGrid>
+        <local:MyLabel x:Name="alamat_lbl" Content="Alamat" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
+        <local:MyTextBox x:Name="alamat_txt" HorizontalAlignment="Left" Height="79" Margin="124,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"/>
+    </local:MyGrid>
+</local:MyUserControl>

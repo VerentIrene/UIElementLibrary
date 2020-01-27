@@ -8,28 +8,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <local:MyGrid>
-        <local:MyTextBox x:Name="nrp_txt" HorizontalAlignment="Left" Height="23" Margin="146,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" PreviewTextInput="ValidasiAngka"/>
-        <local:MyLabel x:Name="nrp_lbl" Content="NRP" HorizontalAlignment="Left" Margin="25,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyLabel x:Name="tglLahir_lbl" Content="Tanggal lahir" HorizontalAlignment="Left" Margin="25,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyDatePicker x:Name="tglLahir_dat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,111,0,0" Width="177" IsTodayHighlighted="True" SelectedDateFormat="Short" SelectedDate="1/1/1998"/>
-        <local:MyLabel x:Name="jenisKelamin_lbl" Content="Jenis kelamin" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyRadioButton x:Name="jkLaki_rdo" Content="Laki-laki" HorizontalAlignment="Left" Margin="146,144,0,0" VerticalAlignment="Top" GroupName="jenis_kelamin"/>
-        <local:MyRadioButton x:Name="jkPerempuan_rdo" Content="Perempuan" HorizontalAlignment="Left" Margin="246,144,0,0" VerticalAlignment="Top" GroupName="jenis_kelamin"/>
-        <local:MyLabel x:Name="agama_lbl" Content="Agama" HorizontalAlignment="Left" Margin="25,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyComboBox x:Name="agama_cbo" HorizontalAlignment="Left" Margin="146,172,0,0" VerticalAlignment="Top" Width="177" />
-        <local:MyLabel  x:Name="prestasi_lbl" Content="Prestasi yang pernah diraih" HorizontalAlignment="Left" Margin="373,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyListBox x:Name="prestasi_lb" HorizontalAlignment="Left" Height="56" Margin="535,79,0,0" VerticalAlignment="Top" Width="233"/>
-        <local:MyTextBox x:Name="prestasi_txt" HorizontalAlignment="Left" Height="23" Margin="535,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
-        <local:MyButton x:Name="tambah_btn" Content="+" HorizontalAlignment="Left" Margin="745,51,0,0" VerticalAlignment="Top" Width="23" Click="OnClickTambah_btn" FontWeight="Bold" Height="23"/>
-        <local:MyLabel x:Name="alamat_lbl" Content="Alamat" HorizontalAlignment="Left" Margin="25,295,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyTextBox x:Name="alamat_txt" HorizontalAlignment="Left" Height="79" Margin="146,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"/>
-        <local:MyTextBox x:Name="noHp_txt" HorizontalAlignment="Left" Height="23" Margin="146,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" PreviewTextInput="ValidasiAngka"/>
-        <local:MyTextBox x:Name="email_txt" HorizontalAlignment="Left" Height="23" Margin="146,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
-        <local:MyTextBox x:Name="linkedin_txt" HorizontalAlignment="Left" Height="23" Margin="146,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
-        <local:MyLabel x:Name="noHp_lbl" Content="Nomor HP" HorizontalAlignment="Left" Margin="25,202,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyLabel x:Name="email_lbl" Content="Email" HorizontalAlignment="Left" Margin="25,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <local:MyLabel x:Name="linkedin_lbl" Content="LinkedIn" HorizontalAlignment="Left" Margin="25,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.026,-1.385"/>
-        <PieceOfContainer:FieldHobi Margin="373,150,112.6,90"/>
-        <PieceOfContainer:FieldNama Margin="14,34,440.6,339"/>
+        <PieceOfContainer:FieldHobi Margin="373,136,112.6,104"/>
+        <PieceOfContainer:FieldNama HorizontalAlignment="Left" Height="47" Margin="16,33,0,0" VerticalAlignment="Top" Width="345"/>
+        <PieceOfContainer:FieldNRP HorizontalAlignment="Left" Height="47" Margin="16,66,0,0" VerticalAlignment="Top" Width="335"/>
+        <PieceOfContainer:FieldTanggalLahir HorizontalAlignment="Left" Height="42" Margin="16,97,0,0" VerticalAlignment="Top" Width="335"/>
+        <PieceOfContainer:FieldJenisKelamin HorizontalAlignment="Left" Height="50" Margin="16,134,0,0" VerticalAlignment="Top" Width="335"/>
+        <PieceOfContainer:FieldAgama HorizontalAlignment="Left" Height="100" Margin="18,158,0,0" VerticalAlignment="Top" Width="326"/>
+        <PieceOfContainer:FieldPrestasi HorizontalAlignment="Left" Height="100" Margin="373,31,0,0" VerticalAlignment="Top" Width="411"/>
+        <PieceOfContainer:FieldAlamat HorizontalAlignment="Left" Height="100" Margin="21,300,0,0" VerticalAlignment="Top" Width="326"/>
+        <PieceOfContainer:FieldNoHP Height="100" Margin="14,190,440,0" VerticalAlignment="Top" Width="Auto"/>
+        <PieceOfContainer:FieldEmail Height="Auto" Margin="24,225,440,0" Width="Auto"/>
+        <PieceOfContainer:FieldLinkedin HorizontalAlignment="Left" Height="40" Margin="22,258,0,0" VerticalAlignment="Top" Width="330"/>
     </local:MyGrid>
 </Window>
