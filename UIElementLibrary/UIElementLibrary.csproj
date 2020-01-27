@@ -57,6 +57,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseComponent\MyColor.cs" />
+    <Compile Include="BaseComponent\MyDoubleAnimation.cs" />
+    <Compile Include="BaseComponent\MyDuration.cs" />
+    <Compile Include="BaseComponent\MySolidColorBrush.cs" />
+    <Compile Include="BaseComponent\MyThickness.cs" />
     <Compile Include="PieceOfContainer\FieldAgama.xaml.cs">
       <DependentUpon>FieldAgama.xaml</DependentUpon>
     </Compile>
@@ -229,6 +234,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Injector\" />
+    <Folder Include="Interface\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

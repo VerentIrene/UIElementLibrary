@@ -23,7 +23,10 @@ namespace UIElementLibrary
         public MainWindow()
         {
             InitializeComponent();
+            ClosingProgressBar closingProgressBarControl = new ClosingProgressBar();
+            closingProgressBarControl.ShowDialog();
         }
+
 
     }
 }

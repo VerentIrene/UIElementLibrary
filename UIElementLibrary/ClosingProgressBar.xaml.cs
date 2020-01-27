@@ -17,16 +17,20 @@ using UIElementLibrary.BaseComponent;
 
 namespace UIElementLibrary{
     /// <summary>
-    /// Interaction logic for ProgressBarControl.xaml
+    /// Interaction logic for ClosingProgressBar.xaml
     /// </summary>
-    public partial class ProgressBarControl : MyWindow {
-        public ProgressBarControl(){
+    public partial class ClosingProgressBar : MyWindow {
+        public ClosingProgressBar(){
             InitializeComponent();
 
             closing_pb.IsIndeterminate = false;
-            Duration duration = new Duration(TimeSpan.FromSeconds(20));
-            DoubleAnimation doubleanimation = new DoubleAnimation(200, duration);
-            closing_pb.BeginAnimation(MyProgressBar.ValueProperty, doubleanimation);
+
+            MyDuration myDuration = new MyDuration();
+            MyDoubleAnimation myDoubleAnimation = new MyDoubleAnimation();
+
+            myDuration.setMyDuration(20);
+            myDoubleAnimation.setMyDoubleAnimation(200, myDuration);
+            closing_pb.BeginAnimation(MyProgressBar.ValueProperty, myDoubleAnimation.getDoubleAnimation());
         }
 
         private void OnValueChangedClosing_pb(object sender, RoutedPropertyChangedEventArgs<double> e){

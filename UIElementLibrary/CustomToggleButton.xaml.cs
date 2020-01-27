@@ -21,17 +21,21 @@ namespace UIElement
     /// </summary>
     public partial class CustomToggleButton : MyUserControl
     {
-        Thickness leftSide = new Thickness(-39, 0, 0, 0);
-        Thickness rightSide = new Thickness(0, 0, -39, 0);
-        SolidColorBrush colorOff = new SolidColorBrush(Color.FromRgb(160,160,160));
-        SolidColorBrush colorOn = new SolidColorBrush(Color.FromRgb(130,190,125));
+        MyThickness leftSide = new MyThickness();
+        MyThickness rightSide = new MyThickness();
+        MySolidColorBrush colorOff = new MySolidColorBrush();
+        MySolidColorBrush colorOn = new MySolidColorBrush();
 
         public CustomToggleButton()
         {
+            leftSide.setMyThickness(-39, 0, 0, 0);
+            rightSide.setMyThickness(0, 0, -39, 0);
+            colorOff.setMySolidColorBrush(Color.FromRgb(160, 160, 160));
+            colorOn.setMySolidColorBrush(Color.FromRgb(130, 190, 125));
             InitializeComponent();
-            back_rectangle.Fill = colorOff;
+            back_rectangle.Fill = colorOff.getMySolidColorBrush();
             toggled = false;
-            dot_ellipse.Margin = leftSide;
+            dot_ellipse.Margin = leftSide.getMyThickness();
         }
 
 #region EventHandler
@@ -39,15 +43,15 @@ namespace UIElement
         {
             if (!toggled)
             {
-                back_rectangle.Fill = colorOn;
+                back_rectangle.Fill = colorOn.getMySolidColorBrush();
                 toggled = true;
-                dot_ellipse.Margin = rightSide;
+                dot_ellipse.Margin = rightSide.getMyThickness();
             }
             else
             {
-                back_rectangle.Fill = colorOff;
+                back_rectangle.Fill = colorOff.getMySolidColorBrush();
                 toggled = false;
-                dot_ellipse.Margin = leftSide;
+                dot_ellipse.Margin = leftSide.getMyThickness();
             }
         }
 
@@ -55,15 +59,15 @@ namespace UIElement
         {
             if (!toggled)
             {
-                back_rectangle.Fill = colorOn;
+                back_rectangle.Fill = colorOn.getMySolidColorBrush();
                 toggled = true;
-                dot_ellipse.Margin = rightSide;
+                dot_ellipse.Margin = rightSide.getMyThickness();
             }
             else
             {
-                back_rectangle.Fill = colorOff;
+                back_rectangle.Fill = colorOff.getMySolidColorBrush();
                 toggled = false;
-                dot_ellipse.Margin = leftSide;
+                dot_ellipse.Margin = leftSide.getMyThickness();
             }
         }
 #endregion
