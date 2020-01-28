@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UIElementLibrary.CustomInputField;
 using UIElementLibrary.CustomMessageBox;
 using UIElementLibrary.CutomMessageBox;
 
@@ -22,10 +23,6 @@ namespace UIElementLibrary
         public MainWindow()
         {
             InitializeComponent();
-            new BuilderMessageBox()
-                .buildBaseMessageBox()
-                .setBodyMessage("Test","black")
-                .showMessageBox();
         }
     }
 }

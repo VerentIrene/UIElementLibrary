@@ -10,5 +10,9 @@ namespace UIElementLibrary.CustomInputField
     {
         public BuilderInputField() { }
         
+        public BaseInputField buildBaseInputField(){
+            BaseInputField baseInputField = new BaseInputField();
+            return baseInputField;
+        }
     }
 }

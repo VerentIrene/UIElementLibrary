@@ -16,9 +16,7 @@ using System.Windows.Shapes;
 using UIElementLibrary.BaseComponent;
 
 namespace progress_bar {
-    /// <summary>
-    /// Interaction logic for LoadingBar.xaml
-    /// </summary>
+
     public partial class LoadingBar : MyWindow {
 
         private int duration;

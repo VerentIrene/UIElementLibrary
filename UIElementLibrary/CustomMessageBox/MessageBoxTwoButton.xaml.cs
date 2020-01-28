@@ -19,7 +19,7 @@ namespace UIElementLibrary.CutomMessageBox
 {
     public partial class MessageBoxTwoButton : MyWindow
     {
-        MySolidColorBrush mySolidColorBrush = new MySolidColorBrush();
+        private MySolidColorBrush mySolidColorBrush = new MySolidColorBrush();
         public MessageBoxTwoButton(){
             InitializeComponent();
         }

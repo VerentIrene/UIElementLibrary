@@ -38,6 +38,10 @@ namespace UIElementLibrary.CustomInputField
             return this;
         }
 
+        public void setVisible()
+        {
+            this.Visibility = Visibility.Visible;
+        }
         
     }
 }
