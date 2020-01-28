@@ -71,6 +71,10 @@
     <Compile Include="BaseComponent\MyDuration.cs" />
     <Compile Include="BaseComponent\MySolidColorBrush.cs" />
     <Compile Include="BaseComponent\MyThickness.cs" />
+    <Compile Include="CustomInputField\BaseInputField.xaml.cs">
+      <DependentUpon>BaseInputField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomInputField\BuilderInputField.cs" />
     <Compile Include="CustomMessageBox\MessageBoxTwoButton.xaml.cs">
       <DependentUpon>MessageBoxTwoButton.xaml</DependentUpon>
     </Compile>
@@ -115,6 +119,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="CustomInputField\BaseInputField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomMessageBox\MessageBoxTwoButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

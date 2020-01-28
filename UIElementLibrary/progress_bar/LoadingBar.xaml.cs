@@ -35,12 +35,12 @@ namespace progress_bar {
             this.duration = _duration;
             return this;
         }
-        public LoadingBar setColor(Brush brushes) {
-            closing_pb.Foreground = brushes;
+        public LoadingBar setColor(Brush _brushes) {
+            closing_pb.Foreground = _brushes;
             return this;
         }
+
         public void animate() {
-            Console.WriteLine("animate");
             MyDuration myDuration = new MyDuration();
             MyDoubleAnimation myDoubleAnimation = new MyDoubleAnimation();
             myDuration.setMyDuration(20);
@@ -51,7 +51,7 @@ namespace progress_bar {
 
         private void OnValueChangedClosing_pb(object sender, RoutedPropertyChangedEventArgs<double> e){
             if (closing_pb.Value == closing_pb.Maximum){
-                //App.Current.Shutdown();
+                this.Close();
             }
         }
     }

@@ -11,10 +11,12 @@ namespace UIElementLibrary.CustomMessageBox
         public BuilderMessageBox(){
 
         }
+
         public BaseMessageBox buildBaseMessageBox(){
             BaseMessageBox myMessageBox = new BaseMessageBox();
             return myMessageBox;
         }
+
         public MessageBoxTwoButton buildMessageBoxTwoButton(){
             MessageBoxTwoButton myMessageBox = new MessageBoxTwoButton();
             return myMessageBox;

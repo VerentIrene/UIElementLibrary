@@ -19,18 +19,13 @@ namespace UIElementLibrary
 {
     public partial class MainWindow : Window
     {
-        MessageBoxTwoButton test1 = new BuilderMessageBox().buildMessageBoxTwoButton();
-
         public MainWindow()
         {
             InitializeComponent();
-            test1.showMessageBox();
-            test1.addButton2EventHandler(OnClickCancel_btn);
+            new BuilderMessageBox()
+                .buildBaseMessageBox()
+                .setBodyMessage("Test","black")
+                .showMessageBox();
         }
-        private void OnClickCancel_btn(object sender, RoutedEventArgs e)
-        {
-            test1.Close();
-        }
-
     }
 }

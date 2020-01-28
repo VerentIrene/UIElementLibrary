@@ -18,7 +18,9 @@ using UIElementLibrary.CustomMessageBox;
 namespace UIElementLibrary.CutomMessageBox
 {
     public partial class BaseMessageBox : MyWindow
-    { 
+    {
+        private MySolidColorBrush mySolidColorBrush = new MySolidColorBrush();
+
         public BaseMessageBox(){
             InitializeComponent();
         }
@@ -26,24 +28,24 @@ namespace UIElementLibrary.CutomMessageBox
         public BaseMessageBox setBodyMessage(string _bodyMessage, String _color)
         {
             bodyMessage_tb.Text = _bodyMessage;
-            bodyMessage_tb.Foreground = (SolidColorBrush)new BrushConverter().ConvertFromString(_color);
+            bodyMessage_tb.Foreground = mySolidColorBrush.setMyConverter(_color);
             return this;
         }
 
         public BaseMessageBox setTitle(String _title, String _color){
             title_tb.Text = _title;
-            title_tb.Foreground = (SolidColorBrush)new BrushConverter().ConvertFromString(_color);
+            title_tb.Foreground = mySolidColorBrush.setMyConverter(_color);
             return this;
         }
         public BaseMessageBox setBorderColor(String _color)
         {
-            headerBorder_brd.BorderBrush = (SolidColorBrush)new BrushConverter().ConvertFromString(_color);
+            headerBorder_brd.BorderBrush = mySolidColorBrush.setMyConverter(_color);
             return this;
         }
         public BaseMessageBox setIcon(PackIconKind _icon, String _color)
         {
             icon.Kind = _icon;
-            icon.Foreground = (SolidColorBrush)new BrushConverter().ConvertFromString(_color);
+            icon.Foreground = mySolidColorBrush.setMyConverter(_color);
             return this;
         }
         public BaseMessageBox addButtonEventHandler(RoutedEventHandler eventHandler)
@@ -55,8 +57,8 @@ namespace UIElementLibrary.CutomMessageBox
         public BaseMessageBox setButtonProperty(String _text, String _foreground, String _background)
         {
             footerButton_btn.Content = _text;
-            footerButton_btn.Foreground = (SolidColorBrush)new BrushConverter().ConvertFromString(_foreground);
-            footerButton_btn.Background = (SolidColorBrush)new BrushConverter().ConvertFromString(_background);
+            footerButton_btn.Foreground = mySolidColorBrush.setMyConverter(_foreground);
+            footerButton_btn.Background = mySolidColorBrush.setMyConverter(_background);
             return this;
         }
 

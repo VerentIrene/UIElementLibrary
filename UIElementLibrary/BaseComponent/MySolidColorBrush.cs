@@ -13,14 +13,18 @@ namespace UIElementLibrary.BaseComponent
 
         public MySolidColorBrush() { }
 
-        public void setMySolidColorBrush(Color _color)
-        {
+        public void setMySolidColorBrush(Color _color){
             this.solidColorBrush = new SolidColorBrush(_color);
         }
 
-        public SolidColorBrush getMySolidColorBrush()
-        {
+        public SolidColorBrush getMySolidColorBrush(){
+            return this.solidColorBrush;
+        }
+
+        public SolidColorBrush setMyConverter(String _color){
+            this.solidColorBrush = (SolidColorBrush) new BrushConverter().ConvertFromString(_color);
             return this.solidColorBrush;
         }
     }
-}
+ }
+
