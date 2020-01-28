@@ -7,13 +7,5 @@
              xmlns:localComponent="clr-namespace:UIElementLibrary.BaseComponent"
              mc:Ignorable="d" Width="390" Height="45">
     <localComponent:MyGrid>
-        <DockPanel x:Name="headerPanel_dp" HorizontalAlignment="Left" Height="45" LastChildFill="False" VerticalAlignment="Top">
-            <StackPanel x:Name="headerPanel_sp" VerticalAlignment="Bottom">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Name="headerPanel_tb" Margin="5" VerticalAlignment="Center" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-                </StackPanel>
-                <Border x:Name="headerPanel_brd" BorderBrush="Gray" BorderThickness="2" Height="3" Width="390" VerticalAlignment="Bottom"/>
-            </StackPanel>
-        </DockPanel>
     </localComponent:MyGrid>
 </localComponent:MyUserControl>

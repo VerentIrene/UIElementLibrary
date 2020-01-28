@@ -1,0 +1,43 @@
+﻿<local:MyWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UIElementLibrary.BaseComponent"
+        xmlns:PieceOfContainer="clr-namespace:UIElementLibrary.PieceOfContainer" x:Class="UIElementLibrary.CutomMessageBox.BaseMessageBox"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"    
+        mc:Ignorable="d"
+        Height="200" Width="390"
+        WindowStartupLocation="CenterScreen"
+        Background="White"
+        ResizeMode="NoResize"
+        BorderThickness="1"
+        BorderBrush="LightGray"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        SizeToContent="Height">
+    <local:MyGrid>
+        <local:MyDockPanel x:Name="headerPanel_dp" HorizontalAlignment="Left" Height="45" LastChildFill="False" VerticalAlignment="Top">
+            <local:MyStackPanel x:Name="headerPanel_sp" VerticalAlignment="Bottom">
+                <local:MyStackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon x:Name="icon" Kind="About" Margin="5" Width="20" Height="20" Foreground="#45b6fe"/>
+                    <local:MyTextBlock x:Name="title_tb" Text="Title" Margin="5" VerticalAlignment="Center" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                </local:MyStackPanel>
+                <local:MyBorder x:Name="headerBorder_brd" BorderBrush="#45b6fe" BorderThickness="2" Height="3" Width="390" VerticalAlignment="Bottom"/>
+            </local:MyStackPanel>
+        </local:MyDockPanel>
+        <local:MyDockPanel x:Name="bodyPanel_dp" HorizontalAlignment="Center" Height="110" LastChildFill="False" Width="390" Margin="-1,44">
+            <local:MyStackPanel x:Name="bodyPanel_sp" Margin="20 20 20 20">
+                <local:MyTextBlock x:Name="bodyMessage_tb" TextAlignment="Center" FontSize="15" TextWrapping="Wrap" Width="350" />
+            </local:MyStackPanel>
+        </local:MyDockPanel>
+        <local:MyDockPanel x:Name="footerPanel_dp"  Height="45" LastChildFill="False" VerticalAlignment="Bottom">
+            <local:MyStackPanel x:Name="footerPanel_sp">
+                <local:MyBorder x:Name="footerBorder_brd" BorderBrush="#99808080" BorderThickness="1" Height="2" Width="390" VerticalAlignment="Top"/>
+                <local:MyStackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <local:MyButton x:Name="footerButton_btn"  Content="Button" Height="44.8" VerticalAlignment="Top" Width="75" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Navy" FontFamily="Champagne &amp; Limousines" FontSize="14"/>
+                </local:MyStackPanel>
+            </local:MyStackPanel>
+        </local:MyDockPanel>
+    </local:MyGrid>
+</local:MyWindow>

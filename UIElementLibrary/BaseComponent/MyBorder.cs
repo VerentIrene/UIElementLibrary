@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-
 namespace UIElementLibrary.BaseComponent
 {
-    public class MyProgressBar : ProgressBar
+    public class MyBorder : Border
     {
-        public MyProgressBar()
+        public MyBorder()
         {
+
         }
     }
 }

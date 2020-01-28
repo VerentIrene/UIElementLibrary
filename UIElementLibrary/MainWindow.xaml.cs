@@ -12,21 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UIElementLibrary.CustomMessageBox;
+using UIElementLibrary.CutomMessageBox;
 
 namespace UIElementLibrary
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        MessageBoxTwoButton test1 = new BuilderMessageBox().buildMessageBoxTwoButton();
+
         public MainWindow()
         {
             InitializeComponent();
-            ClosingProgressBar closingProgressBarControl = new ClosingProgressBar();
-            closingProgressBarControl.ShowDialog();
+            test1.showMessageBox();
+            test1.addButton2EventHandler(OnClickCancel_btn);
         }
-
+        private void OnClickCancel_btn(object sender, RoutedEventArgs e)
+        {
+            test1.Close();
+        }
 
     }
 }
