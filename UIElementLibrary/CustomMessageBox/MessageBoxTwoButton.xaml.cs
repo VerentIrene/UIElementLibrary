@@ -17,9 +17,9 @@ using UIElementLibrary.CustomMessageBox;
 
 namespace UIElementLibrary.CutomMessageBox
 {
-    public partial class MessageBoxTwoButton : MyWindow
+    public partial class MessageBoxTwoButton : MyWindow, IMessageBoxTwoButton, IMessageBoxInject
     {
-        private MySolidColorBrush mySolidColorBrush = new MySolidColorBrush();
+        private IMySolidColorBrush mySolidColorBrush;
         public MessageBoxTwoButton(){
             InitializeComponent();
         }
@@ -47,25 +47,25 @@ namespace UIElementLibrary.CutomMessageBox
             return this;
         }
 
-        public MessageBoxTwoButton addButton1EventHandler(RoutedEventHandler _eventHandler){
-            footerButton1_btn.Click += _eventHandler;
+        public MessageBoxTwoButton addLeftButtonEventHandler(RoutedEventHandler _eventHandler){
+            leftButton_btn.Click += _eventHandler;
             return this;
         }
-        public MessageBoxTwoButton addButton2EventHandler(RoutedEventHandler _eventHandler){
-            footerButton2_btn.Click += _eventHandler;
+        public MessageBoxTwoButton addRightButtonEventHandler(RoutedEventHandler _eventHandler){
+            rightButton_btn.Click += _eventHandler;
             return this;
         }
-        public MessageBoxTwoButton setButton1Property(String _text, String _foreground, String _background){
-            footerButton1_btn.Content = _text;
-            footerButton1_btn.Foreground = mySolidColorBrush.setMyConverter(_foreground);
-            footerButton1_btn.Background = mySolidColorBrush.setMyConverter(_background);
+        public MessageBoxTwoButton setLeftButtonProperty(String _text, String _foreground, String _background){
+            leftButton_btn.Content = _text;
+            leftButton_btn.Foreground = mySolidColorBrush.setMyConverter(_foreground);
+            leftButton_btn.Background = mySolidColorBrush.setMyConverter(_background);
             return this;
         }
 
-        public MessageBoxTwoButton setButton2Property(String _text, String _foreground, String _background){
-            footerButton2_btn.Content = _text;
-            footerButton2_btn.Foreground = mySolidColorBrush.setMyConverter(_foreground);
-            footerButton2_btn.Background = mySolidColorBrush.setMyConverter(_foreground);
+        public MessageBoxTwoButton setRightButtonProperty(String _text, String _foreground, String _background){
+            rightButton_btn.Content = _text;
+            rightButton_btn.Foreground = mySolidColorBrush.setMyConverter(_foreground);
+            rightButton_btn.Background = mySolidColorBrush.setMyConverter(_foreground);
             return this;
         }
 
@@ -75,6 +75,11 @@ namespace UIElementLibrary.CutomMessageBox
 
         public void closeMessageBox(){
             this.Close();
+        }
+
+        public void setMySolidColorBrush(IMySolidColorBrush _mySolidColorBrush)
+        {
+            this.mySolidColorBrush = _mySolidColorBrush;
         }
     }
 }

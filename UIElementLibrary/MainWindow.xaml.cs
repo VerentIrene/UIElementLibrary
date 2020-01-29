@@ -23,6 +23,11 @@ namespace UIElementLibrary
         public MainWindow()
         {
             InitializeComponent();
+
+            new BuilderMessageBox()
+                .buildBaseMessageBox()
+                .setTitle("Test", "black")
+                .showMessageBox();
         }
     }
 }

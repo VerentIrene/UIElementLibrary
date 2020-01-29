@@ -65,6 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseComponent\IMySolidColorBrush.cs" />
     <Compile Include="BaseComponent\MyBorder.cs" />
     <Compile Include="BaseComponent\MyColor.cs" />
     <Compile Include="BaseComponent\MyDoubleAnimation.cs" />
@@ -75,6 +76,9 @@
       <DependentUpon>BaseInputField.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomInputField\BuilderInputField.cs" />
+    <Compile Include="CustomMessageBox\IBaseMessageBox.cs" />
+    <Compile Include="CustomMessageBox\IMessageBoxInject.cs" />
+    <Compile Include="CustomMessageBox\IMessageBoxTwoButton.cs" />
     <Compile Include="CustomMessageBox\MessageBoxTwoButton.xaml.cs">
       <DependentUpon>MessageBoxTwoButton.xaml</DependentUpon>
     </Compile>

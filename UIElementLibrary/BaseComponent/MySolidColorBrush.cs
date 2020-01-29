@@ -7,7 +7,7 @@ using System.Windows.Media;
 
 namespace UIElementLibrary.BaseComponent
 {
-    public class MySolidColorBrush
+    public class MySolidColorBrush : IMySolidColorBrush
     {
         private SolidColorBrush solidColorBrush;
 
