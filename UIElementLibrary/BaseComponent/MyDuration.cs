@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace UIElementLibrary.BaseComponent
 {
-    public class MyDuration 
+    public class MyDuration : IMyDuration
     {
         private Duration duration;
 

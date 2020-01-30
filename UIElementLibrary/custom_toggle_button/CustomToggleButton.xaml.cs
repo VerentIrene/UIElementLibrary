@@ -29,23 +29,23 @@ namespace UIElementLibrary.custom_toggle_button
         }
 
  #region CustomProperties
-        public void setMySolidColorBrushColorOn(IMySolidColorBrush _mySolidColorBrush)
-        {
+        public void setMySolidColorBrushColorOn(IMySolidColorBrush _mySolidColorBrush){
             this.colorOn = _mySolidColorBrush;
         }
-        public void setMySolidColorBrushColorOff(IMySolidColorBrush _mySolidColorBrush)
-        {
+        public void setMySolidColorBrushColorOff(IMySolidColorBrush _mySolidColorBrush){
             this.colorOff = _mySolidColorBrush;
         }
 
-        public void setMyThicknessLeftSide(IMyThickness _myThickness)
-        {
+        public void setMyThicknessLeftSide(IMyThickness _myThickness){
             this.leftSide = _myThickness;
         }
 
-        public void setMyThicknessRightSide(IMyThickness _myThickness)
-        {
+        public void setMyThicknessRightSide(IMyThickness _myThickness){
             this.rightSide = _myThickness;
+        }
+
+        public void setMyThicknessMargin(IMyThickness _myThickness){
+            this.marginToggleButton = _myThickness;
         }
 
         public CustomToggleButton init(){
@@ -127,11 +127,6 @@ namespace UIElementLibrary.custom_toggle_button
             return this;
         }
 
-        public void setMyThicknessMargin(IMyThickness _myThickness)
-        {
-            this.marginToggleButton = _myThickness;
-        }
-
-        #endregion
+ #endregion
     }
 }

@@ -7,7 +7,7 @@ using System.Windows.Media.Animation;
 
 namespace UIElementLibrary.BaseComponent
 {
-    class MyDoubleAnimation
+    class MyDoubleAnimation : IMyDoubleAnimation
     {
         private DoubleAnimation doubleAnimation;
 
@@ -15,14 +15,14 @@ namespace UIElementLibrary.BaseComponent
         {
         }
 
-        public void setMyDoubleAnimation(double _toValue, MyDuration _myDuration)
-        {
-            this.doubleAnimation = new DoubleAnimation(_toValue, _myDuration.getMyDuration());
-        }
-
         public  DoubleAnimation getDoubleAnimation()
         {
             return this.doubleAnimation;
+        }
+
+        public void setMyDoubleAnimation(double _toValue, IMyDuration _myDuration)
+        {
+            this.doubleAnimation = new DoubleAnimation(_toValue, _myDuration.getMyDuration());
         }
     }
 }

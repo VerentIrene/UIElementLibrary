@@ -65,6 +65,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseComponent\IMyDoubleAnimation.cs" />
+    <Compile Include="BaseComponent\IMyDuration.cs" />
     <Compile Include="BaseComponent\IMySolidColorBrush.cs" />
     <Compile Include="BaseComponent\IMyThickness.cs" />
     <Compile Include="BaseComponent\MyBorder.cs" />
@@ -124,6 +126,8 @@
       <DependentUpon>HeaderMessageBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="progress_bar\BuilderLoadingBar.cs" />
+    <Compile Include="progress_bar\ILoadingBar.cs" />
+    <Compile Include="progress_bar\ILoadingBarInject.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>

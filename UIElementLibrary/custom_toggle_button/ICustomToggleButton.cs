@@ -16,6 +16,5 @@ namespace UIElementLibrary.custom_toggle_button
         void setToggled(bool _toggled);
         bool getToggled();
 
-
     }
 }
