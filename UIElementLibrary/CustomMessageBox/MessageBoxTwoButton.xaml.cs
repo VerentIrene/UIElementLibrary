@@ -23,6 +23,10 @@ namespace UIElementLibrary.CutomMessageBox
         public MessageBoxTwoButton(){
             InitializeComponent();
         }
+        public void setMySolidColorBrush(IMySolidColorBrush _mySolidColorBrush)
+        {
+            this.mySolidColorBrush = _mySolidColorBrush;
+        }
 
         public MessageBoxTwoButton setBodyMessage(string _bodyMessage, String _color){
             bodyMessage_tb.Text = _bodyMessage;
@@ -77,9 +81,5 @@ namespace UIElementLibrary.CutomMessageBox
             this.Close();
         }
 
-        public void setMySolidColorBrush(IMySolidColorBrush _mySolidColorBrush)
-        {
-            this.mySolidColorBrush = _mySolidColorBrush;
-        }
     }
 }

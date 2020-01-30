@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace UIElementLibrary.BaseComponent
 {
-    public class MyThickness
+    public class MyThickness : IMyThickness
     {
         private Thickness thickness;
 

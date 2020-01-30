@@ -4,10 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UIElementLibrary.BaseComponent"
-        xmlns:PieceOfContainer="clr-namespace:UIElementLibrary.PieceOfContainer" x:Class="UIElementLibrary.MainWindow"
+        xmlns:PieceOfContainer="clr-namespace:UIElementLibrary.PieceOfContainer" xmlns:custom_toggle_button="clr-namespace:UIElementLibrary.custom_toggle_button" x:Class="UIElementLibrary.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <local:MyGrid>
+    <local:MyGrid x:Name="mainGrid">
         <PieceOfContainer:FieldHobi Margin="373,136,112.6,104"/>
         <PieceOfContainer:FieldNama HorizontalAlignment="Left" Height="47" Margin="16,33,0,0" VerticalAlignment="Top" Width="345"/>
         <PieceOfContainer:FieldNRP HorizontalAlignment="Left" Height="47" Margin="16,66,0,0" VerticalAlignment="Top" Width="335"/>

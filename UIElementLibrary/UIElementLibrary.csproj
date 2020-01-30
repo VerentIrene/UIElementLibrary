@@ -66,6 +66,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BaseComponent\IMySolidColorBrush.cs" />
+    <Compile Include="BaseComponent\IMyThickness.cs" />
     <Compile Include="BaseComponent\MyBorder.cs" />
     <Compile Include="BaseComponent\MyColor.cs" />
     <Compile Include="BaseComponent\MyDoubleAnimation.cs" />
@@ -83,6 +84,9 @@
       <DependentUpon>MessageBoxTwoButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomMessageBox\BuilderMessageBox.cs" />
+    <Compile Include="custom_toggle_button\BuilderToggleButton.cs" />
+    <Compile Include="custom_toggle_button\ICustomToggleButton.cs" />
+    <Compile Include="custom_toggle_button\IToggleButtonInject.cs" />
     <Compile Include="PieceOfContainer\FieldAgama.xaml.cs">
       <DependentUpon>FieldAgama.xaml</DependentUpon>
     </Compile>
@@ -135,7 +139,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="CustomToggleButton.xaml">
+    <Page Include="custom_toggle_button\CustomToggleButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -168,7 +172,7 @@
     <Compile Include="CustomMessageBox\BaseMessageBox.xaml.cs">
       <DependentUpon>BaseMessageBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomToggleButton.xaml.cs">
+    <Compile Include="custom_toggle_button\CustomToggleButton.xaml.cs">
       <DependentUpon>CustomToggleButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="Factory\FactoryListBoxItem.cs" />

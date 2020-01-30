@@ -37,11 +37,6 @@ namespace UIElementLibrary.CustomInputField
             itemInput_txt.Width = _width;
             return this;
         }
-
-        public void setVisible()
-        {
-            this.Visibility = Visibility.Visible;
-        }
-        
+    
     }
 }
