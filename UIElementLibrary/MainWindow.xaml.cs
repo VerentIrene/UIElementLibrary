@@ -23,6 +23,8 @@ namespace UIElementLibrary
     public partial class MainWindow : Window
     {
         CustomToggleButton toggleButton = new BuilderToggleButton().buildCustomToggleButton().init();
+        BaseInputField nama_field = new BuilderInputField().buildBaseInputField().init();
+        BaseInputField nrp_field = new BuilderInputField().buildBaseInputField().init();
         public MainWindow()
         {
             InitializeComponent();
@@ -37,6 +39,33 @@ namespace UIElementLibrary
             //customToggleButton.setColorOn("green");
             //customToggleButton.setSize(42, 36);
             //customToggleButton.setLocation(0, 220);
+
+            mainGrid.Children.Add(nrp_field);
+            IBaseInputField customNrpField = nrp_field;
+            customNrpField.setTextBoxSize(170, 25);
+            customNrpField.setLabelText("Nrp", "black");
+            customNrpField.setLocation(16, 20);
+            customNrpField.addTextBoxEventHandler(ValidasiAngka);
+
+            mainGrid.Children.Add(nama_field);
+            IBaseInputField customNamaField = nama_field;
+            customNamaField.setTextBoxSize(170, 25);
+            customNamaField.setLabelText("Nama", "black");
+            customNamaField.setLocation(16, 50);
+            customNamaField.addTextBoxEventHandler(ValidasiHuruf);
+
         }
+
+        public void ValidasiHuruf(object sender, TextCompositionEventArgs e)
+        {
+            MyRegex regex = new MyRegex("[^a-zA-Z]");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+        public void ValidasiAngka(object sender, TextCompositionEventArgs e)
+        {
+            MyRegex regex = new MyRegex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
     }
 }

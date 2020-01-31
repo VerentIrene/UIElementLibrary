@@ -24,6 +24,7 @@ namespace UIElementLibrary.CutomMessageBox
         public BaseMessageBox(){
             InitializeComponent();
         }
+
         public void setMySolidColorBrush(IMySolidColorBrush _mySolidColorBrush)
         {
             this.mySolidColorBrush = _mySolidColorBrush;

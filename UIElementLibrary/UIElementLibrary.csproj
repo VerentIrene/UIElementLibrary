@@ -79,6 +79,8 @@
       <DependentUpon>BaseInputField.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomInputField\BuilderInputField.cs" />
+    <Compile Include="CustomInputField\IBaseInputField.cs" />
+    <Compile Include="CustomInputField\IBaseInputFieldInject.cs" />
     <Compile Include="CustomMessageBox\IBaseMessageBox.cs" />
     <Compile Include="CustomMessageBox\IMessageBoxInject.cs" />
     <Compile Include="CustomMessageBox\IMessageBoxTwoButton.cs" />
@@ -89,6 +91,10 @@
     <Compile Include="custom_toggle_button\BuilderToggleButton.cs" />
     <Compile Include="custom_toggle_button\ICustomToggleButton.cs" />
     <Compile Include="custom_toggle_button\IToggleButtonInject.cs" />
+    <Compile Include="MyEnum\MyHorizontalAlignment.cs" />
+    <Compile Include="MyEnum\IMyHorizontalAlignment.cs" />
+    <Compile Include="MyEnum\IMyVerticalAlignment.cs" />
+    <Compile Include="MyEnum\MyVerticalAlignment.cs" />
     <Compile Include="PieceOfContainer\FieldAgama.xaml.cs">
       <DependentUpon>FieldAgama.xaml</DependentUpon>
     </Compile>
@@ -128,9 +134,6 @@
     <Compile Include="progress_bar\BuilderLoadingBar.cs" />
     <Compile Include="progress_bar\ILoadingBar.cs" />
     <Compile Include="progress_bar\ILoadingBarInject.cs" />
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
     <Page Include="CustomInputField\BaseInputField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -235,10 +238,6 @@
     <Page Include="PieceOfContainer\HeaderMessageBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window1.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
