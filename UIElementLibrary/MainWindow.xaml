@@ -8,16 +8,5 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <local:MyGrid x:Name="mainGrid">
-        <!--<PieceOfContainer:FieldHobi Margin="373,136,112.6,104"/>
-        <PieceOfContainer:FieldNama HorizontalAlignment="Left" Height="47" Margin="16,33,0,0" VerticalAlignment="Top" Width="345"/>
-        <PieceOfContainer:FieldNRP HorizontalAlignment="Left" Height="47" Margin="16,66,0,0" VerticalAlignment="Top" Width="335"/>
-        <PieceOfContainer:FieldTanggalLahir HorizontalAlignment="Left" Height="42" Margin="16,97,0,0" VerticalAlignment="Top" Width="335"/>
-        <PieceOfContainer:FieldJenisKelamin HorizontalAlignment="Left" Height="50" Margin="16,134,0,0" VerticalAlignment="Top" Width="335"/>
-        <PieceOfContainer:FieldAgama HorizontalAlignment="Left" Height="100" Margin="18,158,0,0" VerticalAlignment="Top" Width="326"/>
-        <PieceOfContainer:FieldPrestasi HorizontalAlignment="Left" Height="100" Margin="373,31,0,0" VerticalAlignment="Top" Width="411"/>
-        <PieceOfContainer:FieldAlamat HorizontalAlignment="Left" Height="100" Margin="21,300,0,0" VerticalAlignment="Top" Width="326"/>
-        <PieceOfContainer:FieldNoHP Height="100" Margin="14,190,440,0" VerticalAlignment="Top" Width="Auto"/>
-        <PieceOfContainer:FieldEmail Height="Auto" Margin="24,225,440,0" Width="Auto"/>
-        <PieceOfContainer:FieldLinkedin HorizontalAlignment="Left" Height="40" Margin="22,258,0,0" VerticalAlignment="Top" Width="330"/>-->
     </local:MyGrid>
 </Window>

@@ -11,19 +11,19 @@ namespace UIElementLibrary.MyEnum
     {
         public MyVerticalAlignment() { }
 
-        public VerticalAlignment Top() {
+        public VerticalAlignment setTop() {
             return VerticalAlignment.Top;
         }
 
-        public VerticalAlignment Center() {
+        public VerticalAlignment setCenter() {
             return VerticalAlignment.Center;
         }
 
-        public VerticalAlignment Bottom() {
+        public VerticalAlignment setBottom() {
             return VerticalAlignment.Bottom;
         }
 
-        public VerticalAlignment Stretch() {
+        public VerticalAlignment setStretch() {
             return VerticalAlignment.Stretch;
         }
     }

@@ -15,8 +15,7 @@ namespace UIElementLibrary.CustomMessageBox
 
         }
 
-        public IBaseMessageBox buildBaseMessageBox()
-        {
+        public IBaseMessageBox buildBaseMessageBox(){
             IBaseMessageBox myMessageBox = new BaseMessageBox();
             IMessageBoxInject messageBoxInject = (IMessageBoxInject) myMessageBox;
             messageBoxInject.setMySolidColorBrush(mySolidColorBrush);

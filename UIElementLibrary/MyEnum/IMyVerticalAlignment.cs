@@ -9,13 +9,13 @@ namespace UIElementLibrary.MyEnum
 {
     public interface IMyVerticalAlignment
     {
-        VerticalAlignment Top();
+        VerticalAlignment setTop();
 
-        VerticalAlignment Center();
+        VerticalAlignment setCenter();
 
-        VerticalAlignment Bottom();
+        VerticalAlignment setBottom();
 
-        VerticalAlignment Stretch();
+        VerticalAlignment setStretch();
 
     }
 }

@@ -30,9 +30,9 @@ namespace UIElementLibrary.CustomInputField
 
         public BaseInputField init() {
             this.Width = itemName_lbl.Width + itemInput_txt.Width + 10;
-            itemInput_txt.VerticalContentAlignment = myVerticalAlignment.Center();
+            itemInput_txt.VerticalContentAlignment = myVerticalAlignment.setCenter();
             this.HorizontalAlignment = myHorizontalAlignment.setLeft();
-            this.VerticalAlignment = myVerticalAlignment.Top();
+            this.VerticalAlignment = myVerticalAlignment.setTop();
             return this;
         }
 

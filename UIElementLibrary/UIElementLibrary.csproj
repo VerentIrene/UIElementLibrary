@@ -75,6 +75,11 @@
     <Compile Include="BaseComponent\MyDuration.cs" />
     <Compile Include="BaseComponent\MySolidColorBrush.cs" />
     <Compile Include="BaseComponent\MyThickness.cs" />
+    <Compile Include="CustomComboBox\BaseComboBox.xaml.cs">
+      <DependentUpon>BaseComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomComboBox\BuilderComboBox.cs" />
+    <Compile Include="CustomComboBox\IBaseComboBox.cs" />
     <Compile Include="CustomInputField\BaseInputField.xaml.cs">
       <DependentUpon>BaseInputField.xaml</DependentUpon>
     </Compile>
@@ -95,45 +100,13 @@
     <Compile Include="MyEnum\IMyHorizontalAlignment.cs" />
     <Compile Include="MyEnum\IMyVerticalAlignment.cs" />
     <Compile Include="MyEnum\MyVerticalAlignment.cs" />
-    <Compile Include="PieceOfContainer\FieldAgama.xaml.cs">
-      <DependentUpon>FieldAgama.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldAlamat.xaml.cs">
-      <DependentUpon>FieldAlamat.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldEmail.xaml.cs">
-      <DependentUpon>FieldEmail.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldHobi.xaml.cs">
-      <DependentUpon>FieldHobi.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldJenisKelamin.xaml.cs">
-      <DependentUpon>FieldJenisKelamin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldLinkedin.xaml.cs">
-      <DependentUpon>FieldLinkedin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldNama.xaml.cs">
-      <DependentUpon>FieldNama.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldNoHP.xaml.cs">
-      <DependentUpon>FieldNoHP.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldNRP.xaml.cs">
-      <DependentUpon>FieldNRP.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldPrestasi.xaml.cs">
-      <DependentUpon>FieldPrestasi.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\FieldTanggalLahir.xaml.cs">
-      <DependentUpon>FieldTanggalLahir.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PieceOfContainer\HeaderMessageBox.xaml.cs">
-      <DependentUpon>HeaderMessageBox.xaml</DependentUpon>
-    </Compile>
     <Compile Include="progress_bar\BuilderLoadingBar.cs" />
     <Compile Include="progress_bar\ILoadingBar.cs" />
     <Compile Include="progress_bar\ILoadingBarInject.cs" />
+    <Page Include="CustomComboBox\BaseComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomInputField\BaseInputField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -190,54 +163,6 @@
     <Page Include="progress_bar\LoadingBar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="PieceOfContainer\FieldAgama.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldAlamat.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldEmail.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldHobi.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldJenisKelamin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldLinkedin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldNama.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldNoHP.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldNRP.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldPrestasi.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\FieldTanggalLahir.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PieceOfContainer\HeaderMessageBox.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
