@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UIElementLibrary.BaseComponent"
-        xmlns:PieceOfContainer="clr-namespace:UIElementLibrary.PieceOfContainer" x:Class="UIElementLibrary.CutomMessageBox.BaseMessageBox"
+        x:Class="UIElementLibrary.CutomMessageBox.BaseMessageBox"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"    
         mc:Ignorable="d"
         Height="200" Width="390"

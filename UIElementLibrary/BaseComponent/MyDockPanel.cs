@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace UIElementLibrary.BaseComponent
 {
-    class MyDockPanel : DockPanel
+    public class MyDockPanel : DockPanel
     {
         public MyDockPanel()
         {

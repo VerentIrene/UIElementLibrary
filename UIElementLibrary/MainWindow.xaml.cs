@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UIElementLibrary.BaseComponent;
 using UIElementLibrary.custom_toggle_button;
+using UIElementLibrary.CustomComboBox;
 using UIElementLibrary.CustomInputField;
 using UIElementLibrary.CustomMessageBox;
 using UIElementLibrary.CutomMessageBox;
@@ -25,6 +26,7 @@ namespace UIElementLibrary
         CustomToggleButton toggleButton = new BuilderToggleButton().buildCustomToggleButton().init();
         BaseInputField nama_field = new BuilderInputField().buildBaseInputField().init();
         BaseInputField nrp_field = new BuilderInputField().buildBaseInputField().init();
+        BaseComboBox combo_field = new BuilderComboBox().buildBaseComboBox().init();
         public MainWindow()
         {
             InitializeComponent();
@@ -53,6 +55,21 @@ namespace UIElementLibrary
             customNamaField.setLabelText("Nama", "black");
             customNamaField.setLocation(16, 50);
             customNamaField.addTextBoxEventHandler(ValidasiHuruf);
+
+            MyList<string> ItemList = new MyList<string>();
+            String[] agama = { "Islam", "Kristen", "Katolik", "Hindu", "Buddha", "Konghucu" };
+
+            ItemList.AddRange(agama);
+
+
+            mainGrid.Children.Add(combo_field);
+            IBaseComboBox customComboField = combo_field;
+            customComboField.setComboBoxSize(170, 25);
+            customComboField.setLabelText("Test", "black");
+            customComboField.setLocation(16, 80);
+            customComboField.addItemList(ItemList);
+            //customComboField.addItem("Tony");
+            //customComboField.addItem("Stark");
 
         }
 

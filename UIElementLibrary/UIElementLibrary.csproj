@@ -75,11 +75,15 @@
     <Compile Include="BaseComponent\MyDuration.cs" />
     <Compile Include="BaseComponent\MySolidColorBrush.cs" />
     <Compile Include="BaseComponent\MyThickness.cs" />
+    <Compile Include="CustomCheckBox\BaseCheckBox.xaml.cs">
+      <DependentUpon>BaseCheckBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomComboBox\BaseComboBox.xaml.cs">
       <DependentUpon>BaseComboBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomComboBox\BuilderComboBox.cs" />
     <Compile Include="CustomComboBox\IBaseComboBox.cs" />
+    <Compile Include="CustomComboBox\IBaseComboBoxInject.cs" />
     <Compile Include="CustomInputField\BaseInputField.xaml.cs">
       <DependentUpon>BaseInputField.xaml</DependentUpon>
     </Compile>
@@ -103,6 +107,10 @@
     <Compile Include="progress_bar\BuilderLoadingBar.cs" />
     <Compile Include="progress_bar\ILoadingBar.cs" />
     <Compile Include="progress_bar\ILoadingBarInject.cs" />
+    <Page Include="CustomCheckBox\BaseCheckBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomComboBox\BaseComboBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

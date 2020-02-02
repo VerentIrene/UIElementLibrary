@@ -7,7 +7,7 @@ using System.Windows.Documents;
 
 namespace UIElementLibrary.BaseComponent
 {
-    class MyList<T> : List<T>
+    public class MyList<T> : List<T>
     {
         public MyList() { }
 
